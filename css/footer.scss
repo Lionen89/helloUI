@@ -1,0 +1,198 @@
+.footer {
+  background-color: #130c3a;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  &__title {
+    font-family: 'Circular-Std';
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 85px;
+    max-width: 639px;
+    text-align: center;
+    margin: 150px auto 40px;
+    padding: 0;
+    z-index: 3;
+  }
+  &__copirigh {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 70px auto 25px;
+    padding: 0;
+  }
+  &__form {
+    margin: 0 0 150px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-btn {
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 32px;
+      margin: 0;
+      padding: 24px 50px;
+      background: #0555ff;
+      border-radius: 0px 10px 10px 0px;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  &__input {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    min-width: 528px;
+    color: #c1c1c1;
+    margin: 0;
+    padding: 23px 0 23px 30px;
+    background-color: #130c3a;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px 0px 0px 10px;
+    box-sizing: border-box;
+    border-right: none;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__contact-list {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    list-style: none;
+    margin: 0 260px 0 0;
+    padding: 0;
+    &-item {
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #7884a6;
+      text-decoration: none;
+    }
+  }
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 94px;
+    margin-top: 27px;
+    padding: 0;
+  }
+  &__icon {
+    height: 16px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    &:first-of-type {
+      width: 9px;
+      background-image: url('../images/faceboock.svg');
+    }
+    &:nth-of-type(2) {
+      width: 14px;
+      background-image: url('../images/world.svg');
+    }
+    &:last-of-type {
+      width: 16px;
+      background-image: url('../images/Be.svg');
+    }
+  }
+  &__list {
+    font-family: 'Circular-Std';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 7px 0 0 0;
+    margin: 15px 0 0 0;
+    &:nth-of-type(2) {
+      margin-right: 111px;
+    }
+    &:last-of-type {
+      margin-left: 104px;
+    }
+    &-item {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 42px;
+      color: #7884a6;
+      text-decoration: none;
+      padding: 0;
+      cursor: pointer;
+    }
+  }
+  &__orange {
+    height: 188px;
+    width: 188px;
+    border-radius: 50%;
+    background-color: #ff9d0a;
+    position: absolute;
+    transform: rotate(-36deg);
+    top: 15px;
+    left: 291px;
+    z-index: 2;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 101%;
+      height: 50%;
+      background-color: #130c3a;
+      bottom: 0;
+      right: -1px;
+    }
+  }
+  &__blue {
+    transform: rotate(180deg);
+    background-color: #0555ff;
+    right: 308px;
+    top: -95px;
+    left: unset;
+  }
+  &__circle {
+    display: block;
+    width: 350px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.03);
+    position: absolute;
+    border-radius: 50%;
+    bottom: -2px;
+    left: -160px;
+    &_light {
+      width: 289px;
+      height: 289px;
+      border: 40px solid rgba(255, 255, 255, 0.05);
+      position: absolute;
+      border-radius: 50%;
+      bottom: 322px;
+      right: -129px;
+      box-sizing: border-box;
+    }
+  }
+  &__dots {
+    display: block;
+    width: 317px;
+    height: 333px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    background-image: url('../images/Dot_footer.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30px;
+    left: -136px;
+  }
+}

@@ -1,0 +1,133 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: content-box;
+  max-height: 100px;
+  margin: 0 300px;
+}
+.header__title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: black;
+}
+.header__nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 68px;
+  color: #050038;
+}
+.header__nav-item {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+}
+.header__auth {
+  display: flex;
+  gap: 35px;
+}
+.header__auth-btn {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #050038;
+  margin: 0;
+  padding: 0;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+.header__auth-btn_try {
+  padding: 0;
+  background-color: #0555ff;
+  border-radius: 30px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  min-height: 50px;
+  min-width: 180px;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1540px) {
+  .header {
+    margin: 0 200px;
+  }
+}
+@media screen and (max-width: 1340px) {
+  .header__title {
+    font-size: 29px;
+    line-height: 36px;
+  }
+  .header__nav {
+    gap: 56px;
+  }
+  .header__auth {
+    gap: 30px;
+  }
+  .header__auth-btn {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .header__auth-btn_try {
+    font-size: 16px;
+    line-height: 19px;
+    min-height: 45px;
+    min-width: 150px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .header {
+    margin: 0 100px;
+  }
+  .header__nav {
+    gap: 44px;
+  }
+  .header__auth {
+    gap: 20px;
+  }
+  .header__auth-btn_try {
+    min-height: 40px;
+    min-width: 140px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    margin: 0 50px;
+  }
+  .header__title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .header__nav {
+    gap: 30px;
+  }
+  .header__auth {
+    gap: 10px;
+  }
+  .header__auth-btn__title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .header__auth-btn__title_try {
+    font-size: 14px;
+    line-height: 16px;
+    min-height: 30px;
+    min-width: 100px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .header {
+    margin: 0 20px;
+  }
+}/*# sourceMappingURL=header.css.map */

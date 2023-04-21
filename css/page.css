@@ -1,0 +1,9 @@
+.page {
+  font-family: Inter, Circular-Std, sans-serif;
+  background-color: white;
+  color: #050038;
+}
+.page__container {
+  min-width: 320px;
+  max-width: 1920px;
+}/*# sourceMappingURL=page.css.map */
