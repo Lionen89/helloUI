@@ -62,6 +62,8 @@
     }
   }
   &__burger {
+    display: none;
+    opacity: 0;
     background: inherit;
     border: none;
     width: 25px;
@@ -186,6 +188,8 @@
   .header {
     margin: 0 20px;
     &__burger {
+      display: block;
+      opacity: 1;
       z-index: 2;
     }
     &__nav {
@@ -203,9 +207,13 @@
       min-height: 282px;
       right: -100%;
       transition: all 0.3s ease-out;
+      display: none;
+      opacity: 0;
       z-index: 2;
       &_open {
         right: -50px;
+        display: flex;
+        opacity: 1;
       }
       &-item {
         font-size: 12px;
@@ -221,8 +229,12 @@
       top: 55px;
       transition: all 0.3s ease-out;
       z-index: 2;
+      display: none;
+      opacity: 0;
       &_open {
         right: 37px;
+        display: flex;
+        opacity: 1;
       }
       &-btn {
         font-size: 12px;

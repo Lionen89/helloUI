@@ -62,6 +62,8 @@
   cursor: pointer;
 }
 .header__burger {
+  display: none;
+  opacity: 0;
   background: inherit;
   border: none;
   width: 25px;
@@ -177,6 +179,8 @@
     margin: 0 20px;
   }
   .header__burger {
+    display: block;
+    opacity: 1;
     z-index: 2;
   }
   .header__nav {
@@ -194,10 +198,14 @@
     min-height: 282px;
     right: -100%;
     transition: all 0.3s ease-out;
+    display: none;
+    opacity: 0;
     z-index: 2;
   }
   .header__nav_open {
     right: -50px;
+    display: flex;
+    opacity: 1;
   }
   .header__nav-item {
     font-size: 12px;
@@ -212,9 +220,13 @@
     top: 55px;
     transition: all 0.3s ease-out;
     z-index: 2;
+    display: none;
+    opacity: 0;
   }
   .header__auth_open {
     right: 37px;
+    display: flex;
+    opacity: 1;
   }
   .header__auth-btn {
     font-size: 12px;
