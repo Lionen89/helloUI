@@ -28,6 +28,9 @@
   line-height: 19px;
   cursor: pointer;
 }
+.header__nav_open {
+  right: 0;
+}
 .header__auth {
   display: flex;
   gap: 35px;
@@ -57,6 +60,49 @@
   min-width: 180px;
   border: none;
   cursor: pointer;
+}
+.header__burger {
+  background: inherit;
+  border: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+}
+.header__burger_open {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 3;
+}
+.header__burger-line {
+  height: 2px;
+  width: 25px;
+  background-color: #050038;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease-out;
+}
+.header__burger-line:first-of-type {
+  top: 0;
+}
+.header__burger-line:nth-of-type(2) {
+  top: 12.5px;
+}
+.header__burger-line:last-of-type {
+  bottom: 0;
+}
+.header__burger-line_open:first-of-type {
+  transform: rotate(45deg);
+  top: 11px;
+}
+.header__burger-line_open:nth-of-type(2) {
+  opacity: 0;
+  display: none;
+}
+.header__burger-line_open:last-of-type {
+  transform: rotate(-45deg);
+  bottom: 12px;
 }
 
 @media screen and (max-width: 1540px) {
@@ -129,5 +175,57 @@
 @media screen and (max-width: 780px) {
   .header {
     margin: 0 20px;
+  }
+  .header__burger {
+    z-index: 2;
+  }
+  .header__nav {
+    gap: 10px;
+    padding: 0 0 20px 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    background: #ffffff;
+    margin-top: 107px;
+    margin-right: 50px;
+    min-width: 100px;
+    min-height: 282px;
+    right: -100%;
+    transition: all 0.3s ease-out;
+    z-index: 2;
+  }
+  .header__nav_open {
+    right: -50px;
+  }
+  .header__nav-item {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .header__auth {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: absolute;
+    right: -100%;
+    top: 55px;
+    transition: all 0.3s ease-out;
+    z-index: 2;
+  }
+  .header__auth_open {
+    right: 37px;
+  }
+  .header__auth-btn {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .header__auth-btn_try {
+    background-color: inherit;
+    font-size: 12px;
+    line-height: 15px;
+    color: #050038;
+    min-height: unset;
+    min-width: unset;
   }
 }/*# sourceMappingURL=header.css.map */

@@ -178,11 +178,12 @@
 }
 @media screen and (max-width: 830px) {
   .description__title {
+    margin: 0 10px;
     font-size: 35px;
     line-height: 50px;
   }
   .description__text {
-    margin: 15px 0 20px;
+    margin: 15px 10px 20px;
     font-size: 12px;
     line-height: 20px;
   }
@@ -201,7 +202,7 @@
   .description__info {
     min-height: 210px;
     min-width: 300px;
-    margin: 30px auto 50px;
+    margin: 30px auto 30px;
   }
   .description__info-decor_left {
     display: none;

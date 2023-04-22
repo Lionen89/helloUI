@@ -52,7 +52,7 @@
   height: 25px;
   width: 25px;
   background-image: url("../images/exclamation.svg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .about__card {
@@ -170,4 +170,196 @@
 .about__card-img-orange_reverse {
   transform: rotate(142deg);
   left: -110px;
+}
+
+@media screen and (max-width: 1340px) {
+  .about {
+    gap: 120px;
+    margin-bottom: 200px;
+  }
+  .about__info {
+    margin-top: 80px;
+    max-width: 725px;
+  }
+  .about__info-title {
+    font-size: 36px;
+    line-height: 43px;
+  }
+  .about__info-text {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 25px auto 40px;
+  }
+  .about__info-btn {
+    min-width: 210px;
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 24px;
+    gap: 5px;
+  }
+  .about__info-btn_exclamation {
+    height: 20px;
+    width: 20px;
+  }
+  .about__card {
+    gap: 10%;
+  }
+  .about__card-info {
+    max-width: 400px;
+  }
+  .about__card-title {
+    font-size: 58px;
+    line-height: 73px;
+  }
+  .about__card-text {
+    margin-bottom: 30px;
+  }
+  .about__card-link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .about__card-img {
+    min-height: 350px;
+    min-width: 350px;
+  }
+  .about__card-img-dots {
+    height: 125px;
+    width: 120px;
+    bottom: -50px;
+    left: -43px;
+  }
+  .about__card-img-dots_reverse {
+    right: -43px;
+  }
+  .about__card-img-circle {
+    top: 28px;
+    right: -45px;
+  }
+  .about__card-img-circle_reverse {
+    left: -45px;
+  }
+  .about__card-img-blur {
+    height: 370px;
+    width: 190px;
+  }
+  .about__card-img-orange {
+    height: 150px;
+    width: 150px;
+    bottom: -55px;
+    right: -90px;
+  }
+  .about__card-img-orange_reverse {
+    left: -90px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about {
+    gap: 90px;
+    margin-bottom: 160px;
+  }
+  .about__info {
+    margin-top: 60px;
+    max-width: 580px;
+  }
+  .about__info-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .about__info-text {
+    font-size: 15px;
+    line-height: 23px;
+    margin: 20px auto 30px;
+  }
+  .about__card-info {
+    max-width: 320px;
+  }
+  .about__card-title {
+    font-size: 46px;
+    line-height: 60px;
+  }
+  .about__card-text {
+    margin-bottom: 25px;
+  }
+  .about__card-link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .about__card-img {
+    min-height: 280px;
+    min-width: 280px;
+  }
+  .about__card-img-dots {
+    height: 100px;
+    width: 105px;
+    bottom: -40px;
+    left: -35px;
+  }
+  .about__card-img-dots_reverse {
+    right: -35px;
+  }
+  .about__card-img-circle {
+    top: 23px;
+    right: -38px;
+  }
+  .about__card-img-circle_reverse {
+    left: -38px;
+  }
+  .about__card-img-blur {
+    height: 300px;
+    width: 150px;
+  }
+  .about__card-img-orange {
+    height: 120px;
+    width: 120px;
+    bottom: -44px;
+    right: -70px;
+  }
+  .about__card-img-orange_reverse {
+    left: -70px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .about {
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .about__info {
+    margin: 25px 20px 0;
+  }
+  .about__info-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .about__info-text {
+    font-size: 12px;
+    line-height: 19px;
+    margin: 10px auto 20px;
+  }
+  .about__card {
+    flex-direction: column-reverse;
+    margin: 0 10px;
+  }
+  .about__card:nth-of-type(2) {
+    flex-direction: column-reverse;
+  }
+  .about__card-info {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .about__card-title {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .about__card-img-dots {
+    display: none;
+  }
+  .about__card-img-circle {
+    display: none;
+  }
+  .about__card-img-blur {
+    display: none;
+  }
+  .about__card-img-orange {
+    display: none;
+  }
 }/*# sourceMappingURL=about.css.map */

@@ -19,12 +19,16 @@
     list-style-type: none;
     gap: 68px;
     color: #050038;
+
     &-item {
       font-family: 'Inter';
       font-weight: 400;
       font-size: 16px;
       line-height: 19px;
       cursor: pointer;
+    }
+    &_open {
+      right: 0;
     }
   }
   &__auth {
@@ -54,6 +58,51 @@
         min-width: 180px;
         border: none;
         cursor: pointer;
+      }
+    }
+  }
+  &__burger {
+    background: inherit;
+    border: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: relative;
+    &_open {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      z-index: 3;
+    }
+    &-line {
+      height: 2px;
+      width: 25px;
+      background-color: #050038;
+      position: absolute;
+      left: 0;
+      transition: all 0.3s ease-out;
+      &:first-of-type {
+        top: 0;
+      }
+      &:nth-of-type(2) {
+        top: 12.5px;
+      }
+      &:last-of-type {
+        bottom: 0;
+      }
+      &_open {
+        &:first-of-type {
+          transform: rotate(45deg);
+          top: 11px;
+        }
+        &:nth-of-type(2) {
+          opacity: 0;
+          display: none;
+        }
+        &:last-of-type {
+          transform: rotate(-45deg);
+          bottom: 12px;
+        }
       }
     }
   }
@@ -136,5 +185,57 @@
 @media screen and (max-width: 780px) {
   .header {
     margin: 0 20px;
+    &__burger {
+      z-index: 2;
+    }
+    &__nav {
+      gap: 10px;
+      padding: 0 0 20px 20px;
+      border-radius: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      position: absolute;
+      background: #ffffff;
+      margin-top: 107px;
+      margin-right: 50px;
+      min-width: 100px;
+      min-height: 282px;
+      right: -100%;
+      transition: all 0.3s ease-out;
+      z-index: 2;
+      &_open {
+        right: -50px;
+      }
+      &-item {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+    &__auth {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      position: absolute;
+      right: -100%;
+      top: 55px;
+      transition: all 0.3s ease-out;
+      z-index: 2;
+      &_open {
+        right: 37px;
+      }
+      &-btn {
+        font-size: 12px;
+        line-height: 15px;
+        &_try {
+          background-color: inherit;
+          font-size: 12px;
+          line-height: 15px;
+          color: #050038;
+          min-height: unset;
+          min-width: unset;
+        }
+      }
+    }
   }
 }
